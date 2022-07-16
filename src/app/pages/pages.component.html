@@ -1,39 +1,28 @@
 <div id="main-wrapper">
-    <app-header></app-header>
+  <app-header></app-header>
 
-    <app-sidebar></app-sidebar>
+  <app-sidebar></app-sidebar>
 
+  <!-- ============================================================== -->
+  <!-- Sistema de rutas -->
+  <!-- ============================================================== -->
 
-    <!-- ============================================================== -->
-    <!-- Sistema de rutas -->
-    <!-- ============================================================== -->
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <!-- breadcrumbs -->
+      <app-breadcrumbs></app-breadcrumbs>
+      <!-- breadcrumbs -->
 
-    <div class="page-wrapper">
-        <div class="container-fluid">
-            <!-- breadcrumbs -->
-            <app-breadcrumbs></app-breadcrumbs>
-            <!-- breadcrumbs -->
+      <!--Mi sistema de rutas-->
+      <router-outlet></router-outlet>
 
-            <!--Mi sistema de rutas-->
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <router-outlet></router-outlet>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer">
-                © 2017 Admin Pro by wrappixel.com
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
-
-        </div>
+      <!-- ============================================================== -->
+      <!-- footer -->
+      <!-- ============================================================== -->
+      <footer class="footer">© 2017 Admin Pro by wrappixel.com</footer>
+      <!-- ============================================================== -->
+      <!-- End footer -->
+      <!-- ============================================================== -->
     </div>
+  </div>
 </div>
